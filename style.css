@@ -1,0 +1,74 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    max-width: 750px;
+    padding: 50px;
+
+}
+
+#quote {
+    margin-bottom: 170px;
+}
+
+.container {
+   position: absolute;
+}
+
+
+button:hover span {
+    display:none;
+}
+
+button:hover:before {
+    content:"Gladly";
+
+    
+} 
+
+
+button{
+    --button: hsl(0, 0%, 12%);
+    --button-hover: hsl(0, 0%, 20%);
+    --button-active:  hsl(0, 0%, 30%);
+    --button-visited: hsl(0, 0%, 20%);
+    --button-colour: var(--colour-white);
+    --button-border: var(--colour-black);
+    padding: .9rem 1.7rem;
+    color: var(--button-colour);
+    font-weight: 300;
+    font-size: 15px;
+    transition: all 0.3s ease-in-out;
+    background: var(--button);
+    border: solid 2px var(--button-border);
+    box-shadow: inset 0 0 0 2px var(--colour-white);
+    margin-right: 1em;
+  }
+
+
+.colour {
+    --button: hsl(0, 0%, 79%);
+    --button-hover: hsl(0, 0%, 89%);
+    --button-active:  hsl(0, 0%, 69%);
+    --button-visited: hsl(0, 0%, 89%);
+    --button-colour: var(--colour-black);
+     --button-border: var(--colour-black);
+  }
+  
+  
+  button:hover {
+    background: var(--button-hover);
+    box-shadow: inset 0 0 0 4px var(--colour-white);
+  }
+  
+  button:active {
+    background: var(--button-active);
+  }
+  
+  button:visited {
+    background: var(--button-visited);
+  }
+
