@@ -1,5 +1,6 @@
 body {
     font-family: 'Roboto', sans-serif;
+    font-size: calc(16px + (22 - 16) * ((100vw - 300px) / (1600 - 300)));
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -11,13 +12,17 @@ body {
 }
 
 #quote {
-    margin-bottom: 170px;
+    margin-bottom: 200px;
 }
 
 .container {
    position: absolute;
 }
 
+button {
+  padding: 10px;
+  margin-top: 20px;
+}
 
 button:hover span {
     display:none;
@@ -28,47 +33,6 @@ button:hover:before {
 
     
 } 
-
-
-button{
-    --button: hsl(0, 0%, 12%);
-    --button-hover: hsl(0, 0%, 20%);
-    --button-active:  hsl(0, 0%, 30%);
-    --button-visited: hsl(0, 0%, 20%);
-    --button-colour: var(--colour-white);
-    --button-border: var(--colour-black);
-    padding: .9rem 1.7rem;
-    color: var(--button-colour);
-    font-weight: 300;
-    font-size: 15px;
-    transition: all 0.3s ease-in-out;
-    background: var(--button);
-    border: solid 2px var(--button-border);
-    box-shadow: inset 0 0 0 2px var(--colour-white);
-    margin-right: 1em;
-  }
-
-
-.colour {
-    --button: hsl(0, 0%, 79%);
-    --button-hover: hsl(0, 0%, 89%);
-    --button-active:  hsl(0, 0%, 69%);
-    --button-visited: hsl(0, 0%, 89%);
-    --button-colour: var(--colour-black);
-     --button-border: var(--colour-black);
-  }
   
   
-  button:hover {
-    background: var(--button-hover);
-    box-shadow: inset 0 0 0 4px var(--colour-white);
-  }
-  
-  button:active {
-    background: var(--button-active);
-  }
-  
-  button:visited {
-    background: var(--button-visited);
-  }
 
