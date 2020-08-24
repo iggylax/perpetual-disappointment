@@ -57,12 +57,15 @@ var quotes = [
     'Just because we accept you as you are doesn\'t mean we\'ve abandoned hope you\'ll improve.',
     'Just because you\'ve always done it that way doesn\'t mean it\'s incredibly stupid.',
     'Multitasking: the art of doing twice as much as you should, half as well as you could.',
-    'You aren\'t being paid to believe in the power of your dreams.'
+    'You aren\'t being paid to believe in the power of your dreams.',
+    
+    // custom ones!
+    'I\'d say "sweet dreams", but there aren\'t any left',
 
     
-]
+];
 
 function newQuote () {
-var randomNumber = Math.floor (Math.random()* (quotes.length));
-document.getElementById('quote').innerHTML = quotes [randomNumber];
+  var randomNumber = Math.floor (Math.random()* (quotes.length));
+  document.getElementById('quote').innerHTML = quotes [randomNumber];
 }
